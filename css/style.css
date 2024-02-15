@@ -1,0 +1,462 @@
+/*
+Theme Name: Crédit Agricole Ile de France - Assurance Ski
+Author: MACCIONI Elone 
+Author URI: -
+Description: Landing page Assurance Ski CA IDF
+Version: 1.0.0
+*/
+
+@font-face { font-family: 'Gotham-Thin'; src: url('fonts/Gotham/Gotham-Thin.otf');}
+@font-face { font-family: 'Gotham-Light'; src: url('fonts/Gotham/Gotham-Light.ttf');}
+@font-face { font-family: 'Gotham-Book'; src: url('fonts/Gotham/Gotham-Book.ttf');}
+@font-face { font-family: 'Gotham-Medium'; src: url('fonts/Gotham/Gotham-Medium.ttf');}
+@font-face { font-family: 'Gotham-Bold'; src: url('fonts/Gotham/Gotham-Bold.otf');}
+@font-face { font-family: 'Gotham-Black'; src: url('fonts/Gotham/Gotham-Black.otf');}
+
+@import url('https:// fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------*/
+
+
+:root{
+    --background-body: #F5F5F5;
+    --couleur-primaire: #009597;
+    --couleur-secondaire: #308276;
+    --couleur-black: #000;
+}
+
+
+h1, h2{
+    color: var(--couleur-primaire);
+    font-family: 'Gotham-Bold';
+}
+
+h4{
+    font-family: 'Gotham-Medium';
+}
+
+h3{
+    font-family: 'Gotham-Medium';
+}
+
+p{
+    font-weight: 500;
+    font-family: 'Gotham-Book';
+}
+
+body{
+    background-color: var(--background-body);
+    font-family: 'Gotham';
+}
+
+.list{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-primary{
+    background-color: var(--couleur-secondaire);
+    border-color: #3082764e;
+    box-shadow: 0px 5px 15px #00465267;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 13px 20px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: 'Gotham-Medium';
+}
+
+.btn-primary:hover{
+    background-color: var(--couleur-primaire);
+    border-color: var(--couleur-primaire);
+    font-size: 13.5px;
+}
+
+.btn-primary:active{
+    --bs-btn-active-bg: #009597;
+    --bs-btn-active-border-color: #009597;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/********************** SECTION AND ROW  **************************************/
+
+.titre{
+    max-height: 650px;
+    margin-right: 40px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+.titre-background{
+    background: linear-gradient( rgb(0 0 0 / 23%), rgba(0, 0, 0, 0.5) ), url(../img/SKI.jpg) no-repeat center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center top 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container-titre{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 780px !important;
+    padding-bottom: 60px;
+    transition: 0.3s;
+}
+
+.blochead{
+    background-color: #ffffffcc;
+    padding: 20px;
+}
+
+.paddingtop{
+    padding-top: 15px;
+}
+
+.container-titre h4{
+    font-family: 'Gotham-Book', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#section2 h2{
+    text-align: center;
+}
+
+#section2{
+    margin-bottom: 120px;
+}
+
+#section3{
+    position: relative;
+    background: linear-gradient( rgb(0 0 0 / 23%), rgba(0, 0, 0, 0.5) ), url(../img/Ski-chute1.jpg) no-repeat center;
+    background-size: cover;
+    background-position: center top 30%;
+    background-repeat: no-repeat;
+    height: 700px;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#section3 h2{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    background-color: #009597;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#section5{
+    margin-bottom: 80px;
+}
+
+#section6{
+    background-color: #009597;
+    padding: 80px;
+}
+
+#section6 h3{
+    text-align: center;
+    color: white;
+}
+
+.container-row2{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex h4{
+    font-size: large;
+}
+
+.container-row{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row-g{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-d{
+    margin-right: 100px;
+}
+
+.row-d2{
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-d2 a{
+    padding: 13px 30px;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 500;
+    box-shadow: 0px 5px 15px #00465267;
+    margin-right: 5px;
+    font-family: 'Gotham-Medium';
+}
+
+.row-d2 p{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.row-d3{
+    display: flex;
+    justify-content:center;
+}
+
+.row-g3{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-g3 a{
+    padding: 13px 30px;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 500;
+    box-shadow: 0px 5px 15px #00465267;
+    margin-right: 5px;
+    font-family: 'Gotham-Medium';
+}
+
+.row-g3 p{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#Layer_1{
+    color: #F5F5F5;
+}
+/*************************** *********************************************/
+
+#icon1, #icon2, #icon3{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom:30px;
+}
+
+.content{
+    margin-left: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text2 p{
+    width: 50%;
+    text-align: center;
+}
+
+.text p{
+    width: 50%;
+    text-align: center;
+}
+
+
+.img-arrondie{
+    border-radius: 0 120px 0px 120px;
+    max-width: 80%;
+}
+
+.rotate{
+    transform: rotate(346deg);
+    height: 450px;
+}
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonPrimaire{
+    background-color: var(--couleur-secondaire);
+    padding: 12px 10px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px #00465267;
+    font-family: 'Gotham-Medium';
+}
+.buttonPrimaire:hover{
+    background-color: var(--couleur-primaire);
+    padding: 12px 10px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px #00465267;
+}
+
+.btn-primary2{
+    background-color: #ffffff;
+    border-color: var(--couleur-primaire);
+    box-shadow: 0px 5px 15px #00465267;
+    font-size: 14px;
+    transition: 0.3s;
+    color: var(--couleur-primaire);
+    text-transform: none;
+    font-weight: 500;
+    padding: 13px 20px;
+    font-family: 'Gotham-Medium';
+}
+.btn-primary2:hover{
+    background-color: var(--couleur-primaire);
+    border-color: #3082764e;
+    color: white;
+    font-size: 13.5px;
+    box-shadow: 0px 5px 15px #00465267;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.fleche{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.col-6 h3{
+    color: var(--couleur-primaire);
+}
+
+.custom-size{
+    width: 100%;
+}
+
+.card-title{
+    font-size: larger;
+    line-height: 25px;
+}
+
+.card-body a{
+    font-family: 'Gotham-Medium';
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.mb-3{
+    color: var(--couleur-primaire);
+}
+
+#mentions{
+    background-color: white;
+}
+
+.mentions p
+{
+    padding-top: 60px;
+    padding-bottom: 120px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #707070;
+    font-family: 'Gotham-Book';
+}
+
+sup {
+    font-size: 12px;
+}
+
+.lien-article{
+    color: var(--couleur-primaire);
+}
+
+.text-body-secondary{
+    color: var(--couleur-primaire)!important;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding-left: 1rem;
+}
+
+.card-footer{
+    background-color: white;
+    border-top: none;
+}
+
+
+/********************** ICONES *****************************/
+.bi-life-preserver::before{
+    background-color: #308276;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bi-umbrella::before{
+    background-color: #308276;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.bi-piggy-bank::before{
+    background-color: #308276;
+    padding: 10px;
+    font-size: 40px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+/**********************  **********************************/
